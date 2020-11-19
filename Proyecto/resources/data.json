@@ -1,0 +1,66 @@
+{
+	"aparatos":[
+    		{
+    			"nombre":"Aire acondicionado"
+    			,"marca":"Tohsiba"
+    			,"tipo":"termoregulable"
+    			,"temperaturaMinima":15
+    			,"temperaturaMaxima":35
+    		},
+    		{
+    			"nombre":"Cocina"
+    			,"marca":"Oster"
+    			,"tipo":"termoregulable"
+    			,"temperaturaMinima":120
+    			,"temperaturaMaxima":260
+    		},
+    		{
+    			"nombre":"Calefactor"
+    			,"marca":"Xiaomi"
+    			,"tipo":"termoregulable"
+    			,"temperaturaMinima":22
+    			,"temperaturaMaxima":40
+    		},
+    		{
+	    		"nombre":"Equipo de Sonido"
+	    		,"marca":"Panasonic"
+	    		,"tipo":"señales"
+	    		,"emisoras":[105,955,983,1071]
+    		},
+    		{
+	    		"nombre":"Televisor"
+	    		,"marca":"Samsung"
+	    		,"tipo":"señales"
+	    		,"canales":[7,10,44,23,76]
+    		},
+    		{
+	    		"nombre":"Radio FM"
+	    		,"marca":"Telestar"
+	    		,"tipo":"señales"
+	    		,"emisoras":[1011,957,883,1055]
+    		},
+    		{
+    			"nombre":"Lavadora"
+    			,"marca":"Samsung"
+    			,"tipo":"modalidades"
+    			,"emisoras":["Rápido","Caliente","Frío","Pesado"]
+    		},
+    		{
+    			"nombre":"Microondas"
+    			,"marca":"LG"
+    			,"tipo":"modalidades"
+    			,"emisoras":["Pizza","Descongelar","Un minuto","Peso"]
+    		},
+    		{
+    			"nombre":"Ventilador"
+    			,"marca":"Oster"
+    			,"tipo":"modalidades"
+    			,"emisoras":["Leve","Moderado","Fuerte"]
+    		},
+    		{
+    			"nombre":"Secadora"
+    			,"marca":"Whirlpool"
+    			,"tipo":"modalidades"
+    			,"emisoras":["Instantáneo","Caliente","Algodón","Ropa de cama"]
+    		}]
+}
