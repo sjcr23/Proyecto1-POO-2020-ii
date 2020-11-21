@@ -20,12 +20,10 @@ public class Burbuja {
 			
 			String burbujaPersonaAñadir = personaAñadir.getBurbuja();
 			
-			if(burbujaPersonaAñadir == id) {
+			if(burbujaPersonaAñadir.contentEquals(id)) {
 				burbuja.add(personaAñadir);
 			}
 			
-			
-	
 	}
 		
 }
@@ -34,10 +32,17 @@ public class Burbuja {
 		return id;
 	}
 	
-	public ArrayList<Persona> getArrayList(){
-		return burbuja;
+	public String getArrayList(){
+		String nombre = null;
+		
+		for(int i = 0; i<burbuja.size();i++) {
+			
+			nombre = nombre + burbuja.get(i).getNombre();
+		}
+		
+		return nombre;
+		
 	}
-
 	
 	
 }

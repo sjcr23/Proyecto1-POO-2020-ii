@@ -30,8 +30,7 @@ public class JSONParser {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 		
 	public Sistema generarDatos() {
@@ -81,8 +80,7 @@ public class JSONParser {
 						if(k == burbujasAñadir.size() -1 ) {
 							burbujasAñadir.add(burbujaId);
 						}
-						
-						
+							
 					}
 				}
 				
@@ -108,12 +106,8 @@ public class JSONParser {
 			sistema.añadirBurbuja(nuevaBurbuja);
 		}
 		
-		
-		
 		return sistema;
-			
-			
-			
+				
 			
 	}
 		

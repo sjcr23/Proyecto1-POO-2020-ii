@@ -40,7 +40,7 @@ public class Sistema{
 		
 		for(int i = 0; i<burbujas.size(); i++) {
 			
-			mensaje = mensaje + "\n" + burbujas.get(i).getid();
+			mensaje = mensaje + "\n" + burbujas.get(i).getArrayList();
 		
 		}
 		return mensaje;
