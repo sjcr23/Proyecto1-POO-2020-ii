@@ -1,268 +1,268 @@
 {
 	"personas":[
+			{
+    			"id":"1-1448-0228"
+    			,"telefono":"6702-9230"
+				,"fechaNacimiento":"15-12-1987"
+    			,"nombre":"Brayan Jose Ganoza Arce"
+    			,"tipo":"Costarricense"
+    			,"correo":"elcabromasmacabro@gmail.com"
+    			,"burbujaId":"CRF-420"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"2-0488-0281"
+    			,"telefono":"7725-3201"
+				,"fechaNacimiento":"22-10-1980"
+    			,"nombre":"Victor Carvajal"
+    			,"tipo":"Costarricense"
+    			,"correo":"fcarvajalV@gmail.com"
+    			,"burbujaId":"CRF-420"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"2141-0488-0281"
+    			,"telefono":"8523-9222"
+				,"fechaNacimiento":"12-10-1989"
+    			,"nombre":"Federico Peluche"
+    			,"tipo":"Turista"
+    			,"correo":"federicoP@yahoo.com.mx"
+    			,"burbujaId":"CRF-420"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"1978-0420-0069"
+    			,"telefono":"7703-2126"
+				,"fechaNacimiento":"30-11-1966"
+    			,"nombre":"Leo Zumbado Abarca"
+    			,"tipo":"Turista"
+    			,"correo":"lzabarca@gmail.com"
+    			,"burbujaId":"LPJ-529"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"1688-1267-4189"
+    			,"telefono":"8773-1265"
+				,"fechaNacimiento":"23-01-1988"
+    			,"nombre":"Camila Espinoza Rodríguez"
+    			,"tipo":"Turista"
+    			,"correo":"princescer@gmail.com"
+    			,"burbujaId":"LPJ-529"
+    			,"genero":"femenino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"1813-1711-6173"
+    			,"telefono":"7311-1795"
+				,"fechaNacimiento":"26-12-2008"
+    			,"nombre":"Camilo Zumbado Espinoza"
+    			,"tipo":"Turista"
+    			,"correo":"tribu@gmail.com"
+    			,"burbujaId":"LPJ-529"
+    			,"genero":"Turista"
+    			,"covid19":false
+    		},
+			{
+    			"id":"2-2312-5453"
+    			,"telefono":"8888-8888"
+				,"fechaNacimiento":"01-05-1999"
+    			,"nombre":"Patricio Estrella"
+    			,"tipo":"Residente"
+    			,"correo":"patat@gmail.com"
+    			,"burbujaId":"BTM-127"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"3-5452-1213"
+    			,"telefono":"7777-7777"
+				,"fechaNacimiento":"01-05-1999"
+    			,"nombre":"Bob esponja"
+    			,"tipo":"Residente"
+    			,"correo":"esponjibobu@gmail.com"
+    			,"burbujaId":"BTM-127"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"1-2345-6789"
+    			,"telefono":"6666-6666"
+				,"fechaNacimiento":"01-05-1999"
+    			,"nombre":"Arenita Mejillas"
+    			,"tipo":"Residente"
+    			,"correo":"karateeeee@gmail.com"
+    			,"burbujaId":"BTM-127"
+    			,"genero":"femenino"
+    			,"covid19":false
+    		},
+			{
+    			"id":"1-2323-4545"
+    			,"telefono":"5555-5555"
+				,"fechaNacimiento":"01-05-1999"
+    			,"nombre":"Clamardo Tentáculos"
+    			,"tipo":"Residente"
+    			,"correo":"calamardino@gmail.com"
+    			,"burbujaId":"BTM-127"
+    			,"genero":"masculino"
+    			,"covid19":false
+    		},
     		{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"2-1337-4789"
+    			,"telefono":"4444-4444"
+				,"fechaNacimiento":"01-05-1999"
+    			,"nombre":"Don Cangrejo"
+    			,"tipo":"Residente"
+    			,"correo":"cachincachin@gmail.com"
+    			,"burbujaId":"BTM-127"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-5678-1234"
+    			,"telefono":"7834-1221"
+				,"fechaNacimiento":"05-07-2002"
+    			,"nombre":"Samuel De Luque"
+    			,"tipo":"Turista"
+    			,"correo":"vegettagaymer@gmail.com"
+    			,"burbujaId":"YTG-777"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-2373-4554"
+    			,"telefono":"8756-2321"
+				,"fechaNacimiento":"02-06-1985"
+    			,"nombre":"Raúl Álvarez Genes"
+    			,"tipo":"Tursita"
+    			,"correo":"auronplay@gmail.com"
+    			,"burbujaId":"YTG-777"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"2-0200-6503"
+    			,"telefono":"6123-6789"
+				,"fechaNacimiento":"03-01-1993"
+    			,"nombre":"Rubén Doblas"
+    			,"tipo":"Turista"
+    			,"correo":"rubiuh@gmail.com"
+    			,"burbujaId":"YTG-777"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"4-0444-4400"
+    			,"telefono":"6023-5034"
+				,"fechaNacimiento":"05-07-2001"
+    			,"nombre":"Mayichi Álvarez Umaña"
+    			,"tipo":"Turista"
+    			,"correo":"mayiclips@gmail.com"
+    			,"burbujaId":"YTG-777"
+    			,"genero":"femenino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"3-0333-3300"
+    			,"telefono":"6969-6969"
+				,"fechaNacimiento":"03-10,1977"
+    			,"nombre":"Guillermo Días"
+    			,"tipo":"Turista"
+    			,"correo":"papawilly@gmail.com"
+    			,"burbujaId":"YTG-777"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"2-0202-1231"
+    			,"telefono":"6112-6954"
+				,"fechaNacimiento":"04-12-2004"
+    			,"nombre":"Fiorella Jiménez Corrales"
+    			,"tipo":"Costarricense"
+    			,"correo":"fioJimen@gmail.com"
+    			,"burbujaId":"FJC-127"
+    			,"genero":"femenino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-2354-6578"
+    			,"telefono":"7122-1415"
+				,"fechaNacimiento":"16-06-1970"
+    			,"nombre":"Lucía Corrales Rojas"
+    			,"tipo":"Costarricense"
+    			,"correo":"lucy123@gmail.com"
+    			,"burbujaId":"FJC-127"
+    			,"genero":"femenino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-7989-0123"
+    			,"telefono":"7788-9955"
+				,"fechaNacimiento":"15-04-2018"
+    			,"nombre":"Julián Artavia Corrales"
+    			,"tipo":"Costarricense"
+    			,"correo":"julian32@gmail.com"
+    			,"burbujaId":"FJC-127"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-    		{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"4-6783-2365"
+    			,"telefono":"8856-3423"
+				,"fechaNacimiento":"25-04-1960"
+    			,"nombre":"Florinda Mesa"
+    			,"tipo":"Turista"
+    			,"correo":"meflori@gmail.com"
+    			,"burbujaId":"VEC-144"
+    			,"genero":"femenino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-9988-7766"
+    			,"telefono":"7712-1830"
+				,"fechaNacimiento":"12-11-1961"
+    			,"nombre":"Roberto Gómez Bolaños"
+    			,"tipo":"Turista"
+    			,"correo":"chespiro@gmail.com"
+    			,"burbujaId":"VEC-144"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"2-0488-0281"
+    			,"telefono":"8705-8920"
+				,"fechaNacimiento":"26-09-1973"
+    			,"nombre":"Francela Ramírez Benavides"
+    			,"tipo":"Costarricense"
+    			,"correo":"ferabe09@yahoo.com.mx"
+    			,"burbujaId":"FCR-123"
+    			,"genero":"femenino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+				"id":"1-0422-4681"
+				,"telefono":"8729-5801"
+				,"fechaNacimiento":"31-07-1996"
+    			,"nombre":"Daniel Castro Ramírez"
+    			,"tipo":"Costarricense"
+    			,"correo":"danesramcas1234@gmail.com"
+    			,"burbujaId":"FCR-123"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
-    		},
-			{
-    			"id":
-    			,"telefono":
-				,"fechaNacimiento":
-    			,"nombre":
-    			,"tipo":
-    			,"correo":
-    			,"burbujaId":
-    			,"genero":
-    			,"covid19":
+    			"id":"1-0422-4681"
+    			,"telefono":"8729-5801"
+				,"fechaNacimiento":"05-10-1967"
+    			,"nombre":"Yatsen Castro Cirman"
+    			,"tipo":"Costarricense"
+    			,"correo":"yatcas69@hotmail.com"
+    			,"burbujaId":"FCR-123"
+    			,"genero":"masculino"
+    			,"covid19":false
     		},
 			{
     			"id":"1-1826-0112"
