@@ -1,0 +1,35 @@
+{
+	"establecimientos":[
+		{
+			"nombre":"Crsutáceo Cascarudo"
+			,"ubicacion":"Fondo de Bikini"
+			,"permiso":"BB-01-05-1999"
+			,"aforo":30
+			,"trabajadores":["Don Cangrejo","Bob Esponja","Calamardo Tentáculos"]
+		},
+		{
+			"nombre":"Qué buena tarde"
+			,"permiso":"BT-23-15-4598"
+			,"aforo":20
+			,"trabajadores":["Brayan Jose Ganoza Arce","Victor Carvajal","Federico Peluche","Patricio Estrella","Marselo Sanchez Uribe"]
+		},
+		{
+			"nombre":"TEC"
+			,"permiso":"TC-21-58-9292"
+			,"aforo":40
+			,"trabajadores":["Sufrostico Sanabria Montero","Andrey Murillo Soto","Arenita Mejillas","Lucía Corrales Rojas"]
+		},
+		{
+			"nombre":"McDonalds"
+			,"permiso":"MC-77-55-2395"
+			,"aforo":45
+			,"trabajadores":["Josue Gutierres Manija","Lucía Porras Manija","Sandra Cascante Villapizar","Lucía Matamorros Fernandez"]
+		},
+		{
+			"nombre":"Frutería:Lab-02"
+			,"permiso":"LB-02-09-2020"
+			,"aforo":15
+			,"trabajadores":["Julián Artavia Corrales","Laura Benavides Zamora","Jose Gutierres Murillo","Juan Rosales Guzman"]
+		},
+	]
+}
