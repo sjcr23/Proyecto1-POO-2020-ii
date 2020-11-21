@@ -24,9 +24,9 @@ public class Burbuja {
 				burbuja.add(personaAñadir);
 			}
 			
-	}
+		}
 		
-}
+	}
 	
 	public String getid() {
 		return id;

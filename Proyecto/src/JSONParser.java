@@ -19,11 +19,14 @@ public class JSONParser {
 
 	
 	public JSONParser() {
+		
 		filePersonas = new File("resources/personas.json");
+		fileEstablecimientos = new File("resources/establecimientos.json");
 		mapper = new ObjectMapper();
 		
 		try {
 			nodoPersonas = mapper.readTree(filePersonas);
+			nodoEstablecimientos = mapper.readTree(fileEstablecimientos);
 		} catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -105,6 +108,38 @@ public class JSONParser {
 			//añade la burbuja a la lista de burbujas del sistema
 			sistema.añadirBurbuja(nuevaBurbuja);
 		}
+		///////////////////////////////////////////////////////
+		
+		ArrayNode establecimientos = (ArrayNode) nodoEstablecimientos.get("establecimientos");
+		
+		if(establecimientos!= null) {
+			for(int i = 0; i<establecimientos.size();i++) {
+				JsonNode establecimiento = establecimientos.get(i);
+				
+				String nombre = establecimiento.get("nombre").asText();
+				String ubicacion = establecimiento.get("ubicacion").asText();
+				String permiso = establecimiento.get("permiso").asText();
+				int aforo = establecimiento.get("aforo").asInt();
+				ArrayNode listaTrabajadoresJSON = (ArrayNode) establecimiento.get("trabajadores");
+				
+				if(listaTrabajadoresJSON != null) {
+					String[] listaTrabajadores = new String[listaTrabajadoresJSON.size()];
+					for(int j = 0; j<listaTrabajadoresJSON.size(); j++) {
+						listaTrabajadores[j] = listaTrabajadoresJSON.get(j).asText();
+					}
+					
+				}
+				
+				
+				
+				Establecimiento nuevoEstablecimientos = new Establecimiento(nombre,ubicacion,permiso,aforo,listaTrabaj)
+				
+				
+				
+				
+			}
+		}
+
 		
 		return sistema;
 				
@@ -114,7 +149,7 @@ public class JSONParser {
 		
 		
 		
-		
+
 
 	
 
