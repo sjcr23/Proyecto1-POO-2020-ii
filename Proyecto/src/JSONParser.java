@@ -37,15 +37,11 @@ public class JSONParser {
 	}
 		
 	public Sistema generarDatos() {
-		//Parámetros para crear la instancia de sistema (todo comienza vació)
-		ArrayList<Persona> listaPersonas = new ArrayList<Persona>();
-		ArrayList<Establecimiento> listaEstablecimientos = new ArrayList<Establecimiento>();
-		ArrayList<Burbuja> listaBurbujas = new ArrayList<Burbuja>();
 		
 		//Lista con las burbujas que se van a añadir 
 		ArrayList<String> burbujasAñadir = new ArrayList<String>();			
 			
-		Sistema sistema = new Sistema(listaPersonas, listaEstablecimientos, listaBurbujas);
+		Sistema sistema = new Sistema();
 		ArrayNode personas = (ArrayNode) nodoPersonas.get("personas");
 		
 		//Itera por las personas del jason
@@ -128,15 +124,13 @@ public class JSONParser {
 						listaTrabajadores[j] = listaTrabajadoresJSON.get(j).asText();
 					}
 					
+					Establecimiento nuevoEstablecimiento = new Establecimiento(nombre,ubicacion,permiso,aforo);
+					nuevoEstablecimiento.añadirTrabajadores(listaTrabajadores, sistema.getPersonas());
+					
+					sistema.añadirEstablecimiento(nuevoEstablecimiento);
+					
 				}
-				
-				
-				
-				Establecimiento nuevoEstablecimientos = new Establecimiento(nombre,ubicacion,permiso,aforo,listaTrabaj)
-				
-				
-				
-				
+			
 			}
 		}
 

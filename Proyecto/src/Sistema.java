@@ -6,12 +6,11 @@ public class Sistema{
 	private ArrayList<Establecimiento> establecimientos;
 	private ArrayList<Burbuja> burbujas;
 	
-	public Sistema(ArrayList<Persona> personas, ArrayList<Establecimiento> establecimientos,
-			ArrayList<Burbuja> burbujas) {
+	public Sistema() {
 		super();
-		this.personas = personas;
-		this.establecimientos = establecimientos;
-		this.burbujas = burbujas;
+		this.personas = new ArrayList<Persona>();
+		this.establecimientos = new ArrayList<Establecimiento>();
+		this.burbujas = new ArrayList<Burbuja>();
 	}
 	
 	
@@ -36,13 +35,9 @@ public class Sistema{
 	@Override
 	public String toString() {
 		String mensaje;
-		mensaje = "personas";
+		mensaje = establecimientos.get(0).toString();
 		
-		for(int i = 0; i<burbujas.size(); i++) {
-			
-			mensaje = mensaje + "\n" + burbujas.get(i).getArrayList();
 		
-		}
 		return mensaje;
 	}
 	
