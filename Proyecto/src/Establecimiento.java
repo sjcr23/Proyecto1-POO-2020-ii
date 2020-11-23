@@ -8,7 +8,7 @@ public class Establecimiento {
 	private String permiso;
 	private int aforo;
 	
-	private ArrayList<Persona> trabajadores;
+	private ArrayList<Persona> colaboradores;
 	private	ArrayList<Dia> registro;
 	
 
@@ -19,7 +19,7 @@ public class Establecimiento {
 		this.ubicacion = ubicacion;
 		this.permiso = permiso;
 		this.aforo = aforo;
-		this.trabajadores = new ArrayList<Persona>();
+		this.colaboradores= new ArrayList<Persona>();
 		this.registro = new ArrayList<Dia>();
 	}
 	
@@ -31,7 +31,7 @@ public class Establecimiento {
 				Persona personaAñadir = personasTotal.get(j);
 				
 				if(persona.contentEquals(personaAñadir.getNombre())){
-					this.trabajadores.add(personaAñadir);
+					this.colaboradores.add(personaAñadir);
 					continue;
 					
 				}
@@ -40,12 +40,16 @@ public class Establecimiento {
 		}
 	}
 	
+	public void actualizarRegistro(Dia dia) {
+		registro.add(dia);
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
 	
 	public ArrayList<Persona> getTrabajadores(){
-		return trabajadores;
+		return colaboradores;
 	}
 	
 	public ArrayList<Dia> getRegistro(){
@@ -55,8 +59,8 @@ public class Establecimiento {
 	@Override
 	public String toString() {
 		String nombre = " ";
-		for (int i = 0; i<trabajadores.size();i++) {
-			nombre = nombre + ", " + trabajadores.get(i).getNombre();
+		for (int i = 0; i<registro.size();i++) {
+			nombre = nombre + ", " + registro.get(i).toString();
 		}
 		return nombre;
 	}

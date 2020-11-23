@@ -116,17 +116,16 @@ public class JSONParser {
 				String ubicacion = establecimiento.get("ubicacion").asText();
 				String permiso = establecimiento.get("permiso").asText();
 				int aforo = establecimiento.get("aforo").asInt();
-				ArrayNode listaTrabajadoresJSON = (ArrayNode) establecimiento.get("trabajadores");
+				ArrayNode listaColaboradoresJSON = (ArrayNode) establecimiento.get("colaboradores");
 				
-				if(listaTrabajadoresJSON != null) {
-					String[] listaTrabajadores = new String[listaTrabajadoresJSON.size()];
-					for(int j = 0; j<listaTrabajadoresJSON.size(); j++) {
-						listaTrabajadores[j] = listaTrabajadoresJSON.get(j).asText();
+				if(listaColaboradoresJSON != null) {
+					String[] listaColaboradores = new String[listaColaboradoresJSON.size()];
+					for(int j = 0; j<listaColaboradoresJSON.size(); j++) {
+						listaColaboradores[j] = listaColaboradoresJSON.get(j).asText();
 					}
 					
 					Establecimiento nuevoEstablecimiento = new Establecimiento(nombre,ubicacion,permiso,aforo);
-					nuevoEstablecimiento.añadirTrabajadores(listaTrabajadores, sistema.getPersonas());
-					
+					nuevoEstablecimiento.añadirTrabajadores(listaColaboradores, sistema.getPersonas());
 					sistema.añadirEstablecimiento(nuevoEstablecimiento);
 					
 				}
@@ -139,7 +138,41 @@ public class JSONParser {
 				
 			
 	}
+	
+	public Sistema generarClientes(Sistema sistema){
+		Dia nuevoDia = new Dia();
 		
+		for(int i = 0; i<sistema.getEstablecimientos().size();i++) {
+			Establecimiento establecimientoActual = sistema.getEstablecimientos().get(i);
+			
+			for(int k = 0; k<Math.floor(Math.random()*sistema.getPersonas().size());k++) {
+				
+				
+				
+				double nuevoCliente = Math.floor(Math.random()*sistema.getPersonas().size());
+				int indiceCliente = (int)nuevoCliente;
+				
+				Persona cliente = sistema.getPersonas().get(indiceCliente);
+				
+				nuevoDia.setCliente(cliente);
+				
+				
+				
+				
+				
+			}
+			establecimientoActual.actualizarRegistro(nuevoDia);
+			
+		}
+
+		
+		sistema.setDia(nuevoDia);
+		
+		return sistema;
+		
+		
+	}
+	
 		
 		
 		

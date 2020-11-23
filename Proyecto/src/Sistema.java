@@ -5,6 +5,7 @@ public class Sistema{
 	private ArrayList<Persona> personas;
 	private ArrayList<Establecimiento> establecimientos;
 	private ArrayList<Burbuja> burbujas;
+	private Dia DiaActual;
 	
 	public Sistema() {
 		super();
@@ -26,11 +27,17 @@ public class Sistema{
 	public void añadirBurbuja(Burbuja nuevaBurbuja) {
 		burbujas.add(nuevaBurbuja);
 	}
-	
+	public void setDia(Dia dia) {
+		this.DiaActual = dia;
+		
+	}
 	public ArrayList<Persona> getPersonas(){
 		return personas;
 	}
 	
+	public ArrayList<Establecimiento> getEstablecimientos(){
+		return establecimientos;
+	}
 
 	@Override
 	public String toString() {
