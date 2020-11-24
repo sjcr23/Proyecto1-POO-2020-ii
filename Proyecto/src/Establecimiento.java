@@ -2,16 +2,12 @@ import java.util.ArrayList;
 
 public class Establecimiento {
 	
-
 	private String nombre;
 	private String ubicacion;
 	private String permiso;
 	private int aforo;
-	
 	private ArrayList<Persona> colaboradores;
 	private	ArrayList<Dia> registro;
-	
-
 
 	public Establecimiento(String nombre, String ubicacion, String permiso, int aforo) {
 		super();
@@ -64,7 +60,6 @@ public class Establecimiento {
 		}
 		return nombre;
 	}
-	
 	
 	
 	

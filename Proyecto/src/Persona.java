@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Persona {
 	
@@ -50,6 +52,17 @@ public class Persona {
 		return covid19;
 	}
 	
-	
+	public void visitar_establecimiento(ArrayList<Establecimiento> establecimientos, int indice, Persona persona) {
+		Establecimiento establecimiento = establecimientos.get(indice);
+		ArrayList<Dia> registro = establecimiento.getRegistro();
+		LocalDate fecha = LocalDate.now();
+		for(int i = 0; i < registro.size();i++) {
+			if(registro.get(i).getFecha() == fecha) {
+				registro.get(i).setCliente(persona);
+				break;
+			}
+			
+		}
+	}
 	
 }
