@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
+
 public class main {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
 		JSONParser parser = new JSONParser();
 		Sistema sistema = parser.generarDatos();
+		menu(sistema);
+		
+		/*
 		InstitucionAutorizada institucion = new InstitucionAutorizada("CCSS");
-		
-		
-		for(int i = 0;i<sistema.getPersonas().size();i++) {
-			System.out.println( i + 1 + " " + sistema.getPersonas().get(i).getNombre() + "\n");
-		}
 		
 		System.out.println("Ingrese la personas\n");
 		int persona = scanner.nextInt() -1;
@@ -25,6 +23,79 @@ public class main {
 		
 		institucion.realizarPrueba(sistema, sistema.getPersonas(), null, null);
 		System.out.println(institucion.get_reporte());
+		*/
 	}
 
+	public static void menu(Sistema sistema) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("\n========================== HelloThere ^^ ==========================\n");
+		System.out.println("  Hola!\n  Saludos, qué gusto verte de nuevo! <(^o^)> \n ");
+		while (true){
+			mostrar_opciones();
+			System.out.println("  Dime, ¿Qué te gustaría hacer?:");
+			int opcion = scanner.nextInt();
+			
+			
+			if(opcion == 1) {
+				System.out.println("===================================================================\n\n");
+				System.out.println("--------------Lista de Personas--------------\n");
+				for(int i = 0;i<sistema.getPersonas().size();i++) {
+					System.out.println("    " + (i + 1) + ". " + sistema.getPersonas().get(i).getNombre() + "\n");
+				}
+				System.out.println("===================================================================\n\n");
+			}
+			
+			if(opcion == 2) {
+				System.out.println("===================================================================\n\n");
+				System.out.println("--------------Lista de Establecimientos--------------\n");
+				for(int j = 0;j<sistema.getEstablecimientos().size();j++) {
+					System.out.println("    " + (j + 1) + ". " + sistema.getEstablecimientos().get(j).getNombre() + "\n");
+				}
+				System.out.println("===================================================================\n\n");
+			}
+			
+			if(opcion == 3) {
+				System.out.println("===================================================================\n\n");
+				System.out.println("--------------Lista de Burbujas--------------\n");
+				for(int j = 0;j<sistema.getBurbujas().size();j++) {
+					System.out.println("     " + (j + 1) + ". " + sistema.getBurbujas().get(j).getid() + "\n");
+				}
+				System.out.println("===================================================================\n\n");
+			}
+			
+			if(opcion == 4) {
+				
+				System.out.println("  ¿Necesitas ver la lista de personas?");
+				System.out.println("     0. No");
+				System.out.println("     1. Sí");
+				opcion = scanner.nextInt();
+				
+				if(opcion != 0) {
+					System.out.println("--------------Lista de Personas--------------\n");
+					for(int i = 0;i<sistema.getPersonas().size();i++) {
+						System.out.println("     " + (i + 1) + ". " + sistema.getPersonas().get(i).getNombre() + "\n");
+					}
+					System.out.println("-------------------------------------------\n");
+				}
+				System.out.println("  Elija una persona: \n");
+				int persona = scanner.nextInt()-1;
+				Persona personaEscogia = sistema.getPersonas().get(persona);
+				personaEscogia.visitar_establecimiento(sistema.getEstablecimientos(), personaEscogia);
+			}
+			
+			if(opcion == 5) {
+				System.out.println("=========================== SeeYou! ^^ ===========================\n");
+				break;
+			}
+		}
+		
+		}
+	
+	public static void mostrar_opciones() {
+		System.out.println("     1. Mostrar Lista de personas.");
+		System.out.println("     2. Mostrar Lista de establecimientos.");
+		System.out.println("     3. Mostrar Lista de Burbujas.");
+		System.out.println("     4. Hacer que una persona visite un establicimiento.");
+		System.out.println("     5. Salir del menú.\n");
+	}
 }

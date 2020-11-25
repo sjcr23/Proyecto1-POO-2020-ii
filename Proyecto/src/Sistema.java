@@ -44,6 +44,11 @@ public class Sistema{
 		return establecimientos;
 	}
 
+	public ArrayList<Burbuja> getBurbujas(){
+		return burbujas;
+	}
+
+	
 	@Override
 	public String toString() {
 		String mensaje;
