@@ -1,4 +1,6 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Sistema{
 	
@@ -6,6 +8,7 @@ public class Sistema{
 	private ArrayList<Establecimiento> establecimientos;
 	private ArrayList<Burbuja> burbujas;
 	private Dia DiaActual;
+
 	
 	public Sistema() {
 		super();
@@ -14,6 +17,8 @@ public class Sistema{
 		this.burbujas = new ArrayList<Burbuja>();
 	}
 	
+
+
 	
 	public void añadirPersonas(Persona nuevaPersona) {
 		personas.add(nuevaPersona);
@@ -42,7 +47,7 @@ public class Sistema{
 	@Override
 	public String toString() {
 		String mensaje;
-		mensaje = establecimientos.get(0).toString();
+		mensaje = establecimientos.get(2).toString();
 		
 		
 		return mensaje;

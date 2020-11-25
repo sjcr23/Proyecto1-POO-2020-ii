@@ -5,12 +5,15 @@ public class Notificacion_contacto extends Notificacion{
 	
 	private ArrayList<Dia> registro_dia;
 
-	public Notificacion_contacto(ArrayList<Dia> dia, Persona paciente) {
-		super();
-		super.mensaje = "Positivo para Covid19";
-		super.fecha = LocalDate.now();
-		super.paciente = paciente;
+	public Notificacion_contacto(Dia diaActual, Persona paciente) {
+		super(paciente);
+		
 		this.registro_dia = new ArrayList<Dia>();
+	}
+
+	@Override
+	public String toString() {
+		return super.mensaje + "\n";
 	}
 	
 	

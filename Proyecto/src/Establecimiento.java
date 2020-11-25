@@ -19,6 +19,8 @@ public class Establecimiento {
 		this.registro = new ArrayList<Dia>();
 	}
 	
+	
+	//Llamada en el Parser para añádir los trabajadores a cada instancia de establecimiento
 	public void añadirTrabajadores(String[] listaTrabajadores, ArrayList<Persona> personasTotal) {
 		for(int i = 0; i<listaTrabajadores.length;i++) {
 			String persona = listaTrabajadores[i];
@@ -36,9 +38,14 @@ public class Establecimiento {
 		}
 	}
 	
+	
+	//Añade una instacia de Dia al registro
 	public void actualizarRegistro(Dia dia) {
 		registro.add(dia);
 	}
+	
+	
+	
 	
 	public String getNombre() {
 		return nombre;
@@ -56,7 +63,7 @@ public class Establecimiento {
 	public String toString() {
 		String nombre = " ";
 		for (int i = 0; i<registro.size();i++) {
-			nombre = nombre + ", " + registro.get(i).toString();
+			nombre = nombre  + registro.get(i).toString() + ", ";
 		}
 		return nombre;
 	}

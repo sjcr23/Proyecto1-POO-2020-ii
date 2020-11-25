@@ -11,6 +11,8 @@ public class Burbuja {
 		this.burbuja = new ArrayList<Persona>();
 	}
 	
+	
+	//Llamada en el parser para añadir instancias de personas al arreglo
 	public void añadirPersonas(ArrayList<Persona> personasTotal){
 		
 		
@@ -28,6 +30,10 @@ public class Burbuja {
 		
 	}
 	
+	
+	public ArrayList<Persona> getPeronas(){
+		return burbuja;
+	}
 	public String getid() {
 		return id;
 	}

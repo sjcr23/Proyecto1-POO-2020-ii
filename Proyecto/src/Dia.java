@@ -22,6 +22,9 @@ public class Dia {
 	}
 	
 	
+	
+	//Llamada en la funcion de persona de visitarEstablecimiento
+	//Añade la persona la la lista de clientes, que estará incluida la lista de dias del registro del establecimiento
 	public ArrayList<Persona>  setCliente(Persona cliente) {
 		this.clientes.add(cliente);
 		return clientes;

@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Persona {
 	
@@ -52,9 +53,31 @@ public class Persona {
 		return covid19;
 	}
 	
-	public void visitar_establecimiento(ArrayList<Establecimiento> establecimientos, int indice, Persona persona) {
+	
+	//Actualiza el registro de un establecimiento con el dia actual y la persona que visito dicho lugar
+	public void visitar_establecimiento(ArrayList<Establecimiento> establecimientos, Persona persona) {
+		Dia dia;
+		Scanner scanner = new Scanner(System.in);
+		
+		for(int i = 0; i < establecimientos.size();i++) {
+			System.out.println(i + 1 + " " + establecimientos.get(i).getNombre() + "\n");
+			
+		}
+		System.out.println("Ingrese el establecimiento \n");
+		int indice = scanner.nextInt() -1;
+		
+		
+		
 		Establecimiento establecimiento = establecimientos.get(indice);
 		ArrayList<Dia> registro = establecimiento.getRegistro();
+		
+		if(registro.size() == 0) {
+			dia = new Dia();
+			registro.add(dia);
+			registro.get(0).setCliente(persona);
+			return;
+		}
+		
 		LocalDate fecha = LocalDate.now();
 		for(int i = 0; i < registro.size();i++) {
 			if(registro.get(i).getFecha() == fecha) {
