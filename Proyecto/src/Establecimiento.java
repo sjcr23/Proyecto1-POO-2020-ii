@@ -71,16 +71,20 @@ public class Establecimiento {
 			}	
 		}
 	}
+	
 	// Se sobre escribe el método 'toString' de la clase
 	@Override
 	public String toString() {
-		// Declara nombre como string vacío
-		String nombre = " ";
-		// Recorre la lista del registro
-		for (int i = 0; i<registro.size();i++) {
-			// Concatena el dia del registro
-			nombre = nombre  + registro.get(i).toString() + ", ";
+		String colaboradores = "";
+		for(int i = 0; i<this.colaboradores.size();i++) {
+			colaboradores = colaboradores + this.colaboradores.get(i).getNombre() + ", ";
 		}
+		String nombre = "Nombre: " + this.nombre + "\n" + 
+				 "   -Ubicacion: " + this.ubicacion + "\n" +
+				 "   -Permiso: " + this.permiso + "\n" + 
+				 "   -aforo: " + this.aforo + "\n" +
+				 "   -colaboradores: " + colaboradores + "\n";
+
 		return nombre;
 	}
 	

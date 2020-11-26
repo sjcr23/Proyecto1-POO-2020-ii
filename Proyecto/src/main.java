@@ -49,7 +49,7 @@ public class main {
 				// Recorremos la lista de establecimientos del sistema
 				for(int j = 0;j<sistema.getEstablecimientos().size();j++) {
 					// Imprimos la lista con índices y el nombre perteneciente al establecimiento
-					System.out.println("    " + (j + 1) + ". " + sistema.getEstablecimientos().get(j).getNombre() + "\n");
+					System.out.println("    " + (j + 1) + ". " + sistema.getEstablecimientos().get(j).toString() + "\n");
 				}
 				System.out.println("===================================================================\n\n");
 			}
