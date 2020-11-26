@@ -73,27 +73,32 @@ public class Persona {
 		
 		if(registro.size() == 0) {
 			dia = new Dia();
-			registro.add(dia);
-			registro.get(0).setCliente(persona);
-			return;
-		}
-		
-		LocalDate fecha = LocalDate.now();
-		for(int i = 0; i < registro.size();i++) {
-			if(registro.get(i).getFecha() == fecha) {
-				registro.get(i).setCliente(persona);
-				break;
-			}
+			establecimiento.actualizarRegistro(dia);
+			registro.get(0).añadirCliente(persona);
 			
 		}
-	}
+		
+		else {
+			LocalDate fecha = LocalDate.now();
+			for(int i = 0; i < registro.size();i++) {
+				
+				if(registro.get(i).getFecha().compareTo(fecha) == 0) {
+					registro.get(i).añadirCliente(persona);
+					break;
+					}
+				}
+			}
+		
+		establecimiento.imprimirRegistro();
+		
+		}
 
 	@Override
 	public String toString() {
 		String mensaje = "Nombre: " + this.nombre + "\n" + 
-	"ID: " + this.id + "\n" +
-	"Tipo: " + this.tipo + "\n" + 
-	"Burbuja: " + this.idBurbuja + "\n";
+	"     ID: " + this.id + "\n" +
+	"     Tipo: " + this.tipo + "\n" + 
+	"     Burbuja: " + this.idBurbuja + "\n";
 		
 		return mensaje;
 	}

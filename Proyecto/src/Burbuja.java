@@ -45,7 +45,7 @@ public class Burbuja {
 		
 		for(int i = 0; i < burbuja.size(); i++) {
 			
-			nombre = nombre + burbuja.get(i).getNombre()  + "\n";
+			nombre = nombre + "     " + burbuja.get(i).getNombre()  + "\n";
 		}
 		
 		return nombre;

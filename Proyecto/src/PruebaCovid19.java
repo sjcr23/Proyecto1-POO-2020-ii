@@ -34,7 +34,7 @@ public class PruebaCovid19 {
 
 	@Override
 	public String toString() {
-		return "PruebaCovid19 [fecha=" + fecha + ", paciente=" + paciente.getNombre() + ", resultado=" + resultado + "]\n";
+		return "PruebaCovid19 {Fecha: " + fecha + ", Paciente: " + paciente.getNombre() + ", Tipo: " + paciente.getTipo() + ", Resultado: " + resultado + "}\n";
 	}
 	
 	

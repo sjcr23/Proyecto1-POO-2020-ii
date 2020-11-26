@@ -49,6 +49,10 @@ public class InstitucionAutorizada {
 
 	@Override
 	public String toString() {
+		if(reporte.size() == 0) {
+			return "La institucion " + this.nombre + " no tiene registro de haber realizado pruebas covid o no hay pruebas positivas";
+		}
+		
 		String mensaje = nombre+"\n";
 		for(int i = 0 ; i < reporte.size(); i++) {
 			mensaje = mensaje + reporte.get(i).toString() + "\n";

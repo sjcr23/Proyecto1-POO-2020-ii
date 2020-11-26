@@ -10,20 +10,6 @@ public class main {
 		menu(sistema, institucion);
 		
 		
-		/*
-		System.out.println("Ingrese la personas\n");
-		int persona = scanner.nextInt() -1;
-		
-		Persona personaEscogia = sistema.getPersonas().get(persona);
-		
-		personaEscogia.visitar_establecimiento(sistema.getEstablecimientos(), personaEscogia);
-		
-		System.out.println(sistema.toString());
-		
-		
-		institucion.realizarPrueba(sistema, sistema.getPersonas(), null, null);
-		System.out.println(institucion.get_reporte());
-		*/
 	}
 
 	public static void menu(Sistema sistema, InstitucionAutorizada institucion) {
@@ -40,7 +26,7 @@ public class main {
 				System.out.println("===================================================================\n\n");
 				System.out.println("--------------Lista de Personas--------------\n");
 				for(int i = 0;i<sistema.getPersonas().size();i++) {
-					System.out.println("    " + (i + 1) + ". " + sistema.getPersonas().get(i).toString() + "\n");
+					System.out.println(" " + (i + 1) + ". " + sistema.getPersonas().get(i).toString() + "\n");
 				}
 				System.out.println("===================================================================\n\n");
 			}
@@ -58,7 +44,7 @@ public class main {
 				System.out.println("===================================================================\n\n");
 				System.out.println("--------------Lista de Burbujas--------------\n");
 				for(int j = 0;j<sistema.getBurbujas().size();j++) {
-					System.out.println("     " + (j + 1) + ". " + sistema.getBurbujas().get(j).toString() + "\n");
+					System.out.println(" " + (j + 1) + ". " + sistema.getBurbujas().get(j).toString() + "\n");
 				}
 				System.out.println("===================================================================\n\n");
 			}
@@ -79,8 +65,16 @@ public class main {
 				}
 				System.out.println("  Elija una persona: \n");
 				int persona = scanner.nextInt()-1;
-				Persona personaEscogia = sistema.getPersonas().get(persona);
-				personaEscogia.visitar_establecimiento(sistema.getEstablecimientos(), personaEscogia);
+				if(persona>sistema.getPersonas().size()) {
+					System.out.println("Esta persona no se encuentra en nuestro sistema, porfavor intentelo de nuevo");
+					menu(sistema,institucion);
+				}
+				else {
+					Persona personaEscogia = sistema.getPersonas().get(persona);
+					personaEscogia.visitar_establecimiento(sistema.getEstablecimientos(), personaEscogia);
+					System.out.println("\n");
+				}
+
 			}
 			
 			if(opcion == 5) {
@@ -99,8 +93,21 @@ public class main {
 				}
 				System.out.println("  Elija una persona: \n");
 				int persona = scanner.nextInt()-1;
-				Persona personaEscogia = sistema.getPersonas().get(persona);
-				institucion.realizarPrueba(personaEscogia);
+				if(persona>sistema.getPersonas().size()) {
+					System.out.println("Esta persona no se encuentra en nuestro sistema, porfavor intentelo de nuevo");
+					menu(sistema,institucion);
+				}
+				
+				else {
+					Persona personaEscogia = sistema.getPersonas().get(persona);
+					institucion.realizarPrueba(personaEscogia);
+					
+					if(personaEscogia.getCovi19() == true) {
+						sistema.notificarContagio(sistema, personaEscogia);
+					}
+				}
+
+
 
 			}
 			

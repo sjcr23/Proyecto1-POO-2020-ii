@@ -139,46 +139,9 @@ public class JSONParser {
 			
 	}
 	
-	public Sistema generarClientes(Sistema sistema){
-		Dia nuevoDia = new Dia();
-		
-		for(int i = 0; i<sistema.getEstablecimientos().size();i++) {
-			Establecimiento establecimientoActual = sistema.getEstablecimientos().get(i);
-			
-			for(int k = 0; k<Math.floor(Math.random()*sistema.getPersonas().size());k++) {
-				
-				
-				
-				double nuevoCliente = Math.floor(Math.random()*sistema.getPersonas().size());
-				int indiceCliente = (int)nuevoCliente;
-				
-				Persona cliente = sistema.getPersonas().get(indiceCliente);
-				
-				nuevoDia.setCliente(cliente);
-				
-				
-				
-				
-				
-			}
-			establecimientoActual.actualizarRegistro(nuevoDia);
-			
-		}
-
-		
-		sistema.setDia(nuevoDia);
-		
-		return sistema;
-		
-		
-	}
-	
 		
 		
 		
-
-
-	
 
 
 }

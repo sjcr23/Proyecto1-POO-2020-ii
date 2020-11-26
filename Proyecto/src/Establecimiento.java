@@ -59,6 +59,21 @@ public class Establecimiento {
 		return registro;
 	}
 
+	public void imprimirRegistro(){
+		for(int  i = 0 ; i<registro.size(); i++) {
+			Dia diaRegistro = registro.get(i);
+			System.out.println("Registro de clientes del establecimiento " + this.nombre + " del dia"
+					+ ": " + diaRegistro.getFecha());
+			for(int k = 0; k < diaRegistro.getClientes().size(); k++) {
+				
+				
+				System.out.println(diaRegistro.getClientes().get(k).getNombre());
+			}
+			
+		}
+		
+	}
+	
 	@Override
 	public String toString() {
 		String nombre = " ";
