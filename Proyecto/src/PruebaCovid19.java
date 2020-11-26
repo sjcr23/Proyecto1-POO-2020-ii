@@ -1,4 +1,4 @@
-	import java.time.LocalDate;
+import java.time.LocalDate;
 import java.util.Random;
 
 public class PruebaCovid19 {
