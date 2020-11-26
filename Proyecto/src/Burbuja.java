@@ -37,18 +37,21 @@ public class Burbuja {
 	public String getid() {
 		return id;
 	}
-	
-	public String getArrayList(){
-		String nombre = null;
+
+
+	@Override
+	public String toString() {
+		String nombre = "Burbuja :" + this.id + "\n";
 		
-		for(int i = 0; i<burbuja.size();i++) {
+		for(int i = 0; i < burbuja.size(); i++) {
 			
-			nombre = nombre + burbuja.get(i).getNombre();
+			nombre = nombre + burbuja.get(i).getNombre()  + "\n";
 		}
 		
 		return nombre;
-		
 	}
+	
+	
 	
 	
 }

@@ -87,5 +87,20 @@ public class Persona {
 			
 		}
 	}
+
+	@Override
+	public String toString() {
+		String mensaje = "Nombre: " + this.nombre + "\n" + 
+	"ID: " + this.id + "\n" +
+	"Tipo: " + this.tipo + "\n" + 
+	"Burbuja: " + this.idBurbuja + "\n";
+		
+		return mensaje;
+	}
+	
+	
+	
+	
+
 	
 }

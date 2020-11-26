@@ -6,11 +6,11 @@ public class main {
 	public static void main(String[] args) {
 		JSONParser parser = new JSONParser();
 		Sistema sistema = parser.generarDatos();
-		menu(sistema);
+		InstitucionAutorizada institucion = new InstitucionAutorizada("CCSS");
+		menu(sistema, institucion);
+		
 		
 		/*
-		InstitucionAutorizada institucion = new InstitucionAutorizada("CCSS");
-		
 		System.out.println("Ingrese la personas\n");
 		int persona = scanner.nextInt() -1;
 		
@@ -26,7 +26,7 @@ public class main {
 		*/
 	}
 
-	public static void menu(Sistema sistema) {
+	public static void menu(Sistema sistema, InstitucionAutorizada institucion) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("\n========================== HelloThere ^^ ==========================\n");
 		System.out.println("  Hola!\n  Saludos, qué gusto verte de nuevo! <(^o^)> \n ");
@@ -40,7 +40,7 @@ public class main {
 				System.out.println("===================================================================\n\n");
 				System.out.println("--------------Lista de Personas--------------\n");
 				for(int i = 0;i<sistema.getPersonas().size();i++) {
-					System.out.println("    " + (i + 1) + ". " + sistema.getPersonas().get(i).getNombre() + "\n");
+					System.out.println("    " + (i + 1) + ". " + sistema.getPersonas().get(i).toString() + "\n");
 				}
 				System.out.println("===================================================================\n\n");
 			}
@@ -58,7 +58,7 @@ public class main {
 				System.out.println("===================================================================\n\n");
 				System.out.println("--------------Lista de Burbujas--------------\n");
 				for(int j = 0;j<sistema.getBurbujas().size();j++) {
-					System.out.println("     " + (j + 1) + ". " + sistema.getBurbujas().get(j).getid() + "\n");
+					System.out.println("     " + (j + 1) + ". " + sistema.getBurbujas().get(j).toString() + "\n");
 				}
 				System.out.println("===================================================================\n\n");
 			}
@@ -84,6 +84,31 @@ public class main {
 			}
 			
 			if(opcion == 5) {
+				
+				System.out.println("  ¿Necesitas ver la lista de personas?");
+				System.out.println("     0. No");
+				System.out.println("     1. Sí");
+				opcion = scanner.nextInt();
+				
+				if(opcion != 0) {
+					System.out.println("--------------Lista de Personas--------------\n");
+					for(int i = 0;i<sistema.getPersonas().size();i++) {
+						System.out.println("     " + (i + 1) + ". " + sistema.getPersonas().get(i).getNombre() + "\n");
+					}
+					System.out.println("-------------------------------------------\n");
+				}
+				System.out.println("  Elija una persona: \n");
+				int persona = scanner.nextInt()-1;
+				Persona personaEscogia = sistema.getPersonas().get(persona);
+				institucion.realizarPrueba(personaEscogia);
+
+			}
+			
+			if(opcion == 6) {
+				System.out.println(institucion.toString());
+			}
+			
+			if(opcion == 7) {
 				System.out.println("=========================== SeeYou! ^^ ===========================\n");
 				break;
 			}
@@ -96,6 +121,8 @@ public class main {
 		System.out.println("     2. Mostrar Lista de establecimientos.");
 		System.out.println("     3. Mostrar Lista de Burbujas.");
 		System.out.println("     4. Hacer que una persona visite un establicimiento.");
-		System.out.println("     5. Salir del menú.\n");
+		System.out.println("     5. Hacer que una persona se realize la prueba de covid.");
+		System.out.println("     6. Generar reporte de pruebas. ");
+		System.out.println("     7. Salir del menú.\n");
 	}
 }

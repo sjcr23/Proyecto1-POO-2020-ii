@@ -17,21 +17,16 @@ public class InstitucionAutorizada {
 	
 	//LLama a la funcion que hace la prueba, con la persona escogida dentro de la funcion y si da positvo,
 	//llama a la funcion que agrega esa prueba al registro de la institucion
-	public void realizarPrueba(Sistema sistema, ArrayList<Persona> personas, ArrayList<Establecimiento> establecimientos, 
-			ArrayList<Burbuja> burbujas) {
-		Scanner scanner = new Scanner(System.in);
+	public void realizarPrueba(Persona persona_añadidad) {
 		
-		System.out.println("A que persona se le hará la prubeas?\n");
-		int opcion = scanner.nextInt() -1;
-		Persona	persona_añadida = personas.get(opcion);
-		PruebaCovid19 prueba = new PruebaCovid19(persona_añadida);
+		PruebaCovid19 prueba = new PruebaCovid19(persona_añadidad);
 		
-		prueba.setCovid19(persona_añadida);
-		
+		prueba.setCovid19(persona_añadidad);
+		System.out.println(prueba.toString());
 		boolean resultado = prueba.get_resultado();
 		
 		if(resultado) {
-			persona_añadida.setCovid19();
+			persona_añadidad.setCovid19();
 			this.reportarPruebas(prueba);
 		}
 	}	
@@ -50,6 +45,19 @@ public class InstitucionAutorizada {
 	public ArrayList<PruebaCovid19> get_reporte(){
 		return reporte;
 	}
+
+
+	@Override
+	public String toString() {
+		String mensaje = nombre+"\n";
+		for(int i = 0 ; i < reporte.size(); i++) {
+			mensaje = mensaje + reporte.get(i).toString() + "\n";
+			
+		}
+		return mensaje;
+	}
+	
+	
 
 }
 

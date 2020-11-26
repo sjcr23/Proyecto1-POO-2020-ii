@@ -30,4 +30,12 @@ public class PruebaCovid19 {
 	public boolean get_resultado(){
 		return resultado;
 	}
+
+
+	@Override
+	public String toString() {
+		return "PruebaCovid19 [fecha=" + fecha + ", paciente=" + paciente.getNombre() + ", resultado=" + resultado + "]\n";
+	}
+	
+	
 }
