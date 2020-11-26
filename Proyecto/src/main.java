@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-
+// Declaración de la clase Main
 public class main {
-	
+	// Método principal
 	public static void main(String[] args) {
 		// Declaración del Parser: encargado de hacer los objetos de los .json
 		JSONParser parser = new JSONParser();

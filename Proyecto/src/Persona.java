@@ -85,35 +85,36 @@ public class Persona {
 			registro.get(0).añadirCliente(persona);
 			
 		}
-		
+		// Si la lista NO está vacía
 		else {
+			// Se declara la fecha
 			LocalDate fecha = LocalDate.now();
+			// Se recorre el registro
 			for(int i = 0; i < registro.size();i++) {
-				
+				// Si las fechas coinciden:
 				if(registro.get(i).getFecha().compareTo(fecha) == 0) {
+					// Se añade a la lista de clientes la persona y se quiebra el ciclo
 					registro.get(i).añadirCliente(persona);
 					break;
 					}
 				}
 			}
-		
+		// Se imprime el registro.
 		establecimiento.imprimirRegistro();
 		
 		}
-
+	// Se sobre escribe el método 'toString' de la clase
 	@Override
 	public String toString() {
 		String mensaje = "Nombre: " + this.nombre + "\n" + 
-	"     ID: " + this.id + "\n" +
-	"     Tipo: " + this.tipo + "\n" + 
-	"     Burbuja: " + this.idBurbuja + "\n";
-		
+						 "   -ID: " + this.id + "\n" +
+						 "   -Tipo: " + this.tipo + "\n" + 
+						 "   -Burbuja: " + this.idBurbuja + "\n" +
+						 "   -Fecha de Nacimiento: " + this.fechaDeNacimiento + "\n" +
+  						 "   -Correo: " + this.correo + "\n" + 
+						 "   -Teléfono: " + this.teléfono + "\n" +
+						 "   -Estado Covid19: " + this.covid19 + "\n";
+							
 		return mensaje;
-	}
-	
-	
-	
-	
-
-	
+	}	
 }
