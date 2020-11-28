@@ -8,3 +8,7 @@ Grupo de trabajo del Primer Proyecto Programado del curso Programación Orientad
 ### Alberto Zumbado Abarca
 
 <https://youtu.be/piyRJNrQ4cw>
+
+### Josué Castro Ramírez
+
+<https://youtu.be/4xYdUjYsNY4>
